@@ -50,7 +50,7 @@ export default function AboutUsPage() {
             you create a professional resume in minutes. Choose from several
             template options and even pre-populate a resume from your LinkedIn
             profile. Create an account to save your progress and multiple
-            versions, plus download as a PDF.
+            versions, plus download resume as a PDF.
           </Typography>
           <Stack>
             <img
