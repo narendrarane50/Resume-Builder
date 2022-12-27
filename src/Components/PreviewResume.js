@@ -156,7 +156,8 @@ const PreviewResume = (props) => {
                 onClick={handleBack}
                 className="outlined-btn"
                 sx={{ marginRight: "20px" }}
-                variant="outlined">
+                variant="contained"
+                color="success">
                 Back
               </Button>
               {loading ? (
@@ -165,7 +166,8 @@ const PreviewResume = (props) => {
                 <Button
                   onClick={handleSave}
                   className="contained-btn"
-                  variant="contained">
+                  variant="contained"
+                  color="success">
                   Save
                 </Button>
               )}

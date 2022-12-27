@@ -66,7 +66,7 @@ const Details_Sidebar = (props) => {
                 component="a"
                 sx={
                   props.tab === 0
-                    ? { borderLeft: "3px solid rgb(0, 128, 255)" }
+                    ? { borderLeft: "3px solid red" }
                     : null
                 }>
                 <AccountCircleOutlinedIcon
@@ -77,7 +77,7 @@ const Details_Sidebar = (props) => {
                   primary="Personal Info"
                   sx={
                     props.tab === 0
-                      ? { color: "rgb(0, 128, 255)", paddingLeft: "8px" }
+                      ? { color: "red", paddingLeft: "8px" }
                       : null
                   }
                 />
@@ -89,7 +89,7 @@ const Details_Sidebar = (props) => {
                 component="a"
                 sx={
                   props.tab === 1
-                    ? { borderLeft: "3px solid rgb(0, 128, 255)" }
+                    ? { borderLeft: "3px solid red" }
                     : null
                 }>
                 <WorkHistoryRoundedIcon
@@ -100,7 +100,7 @@ const Details_Sidebar = (props) => {
                   primary="Work Experience"
                   sx={
                     props.tab === 1
-                      ? { color: "rgb(0, 128, 255)", paddingLeft: "8px" }
+                      ? { color: "red", paddingLeft: "8px" }
                       : null
                   }
                 />
@@ -112,7 +112,7 @@ const Details_Sidebar = (props) => {
                 component="a"
                 sx={
                   props.tab === 2
-                    ? { borderLeft: "3px solid rgb(0, 128, 255)" }
+                    ? { borderLeft: "3px solid red" }
                     : null
                 }>
                 <SchoolRoundedIcon
@@ -123,7 +123,7 @@ const Details_Sidebar = (props) => {
                   primary="Education"
                   sx={
                     props.tab === 2
-                      ? { color: "rgb(0, 128, 255)", paddingLeft: "8px" }
+                      ? { color: "red", paddingLeft: "8px" }
                       : null
                   }
                 />
@@ -135,7 +135,7 @@ const Details_Sidebar = (props) => {
                 component="a"
                 sx={
                   props.tab === 3
-                    ? { borderLeft: "3px solid rgb(0, 128, 255)" }
+                    ? { borderLeft: "3px solid red" }
                     : null
                 }>
                 <StarsRoundedIcon
@@ -146,7 +146,7 @@ const Details_Sidebar = (props) => {
                   primary="Key Skills"
                   sx={
                     props.tab === 3
-                      ? { color: "rgb(0, 128, 255)", paddingLeft: "8px" }
+                      ? { color: "red", paddingLeft: "8px" }
                       : null
                   }
                 />
@@ -180,7 +180,7 @@ const Details_Sidebar = (props) => {
               },
             }}>
             <MenuItem
-              sx={props.tab === 0 ? { color: "rgb(0, 128, 255)" } : null}
+              sx={props.tab === 0 ? { color: "red" } : null}
               onClick={() => {
                 handleClose();
               }}>
@@ -192,14 +192,14 @@ const Details_Sidebar = (props) => {
                 primary="Personal Info"
                 sx={
                   props.tab === 0
-                    ? { color: "rgb(0, 128, 255)", paddingLeft: "8px" }
+                    ? { color: "red", paddingLeft: "8px" }
                     : null
                 }
               />
             </MenuItem>
             <Divider />
             <MenuItem
-              sx={props.tab === 1 ? { color: "rgb(0, 128, 255)" } : null}
+              sx={props.tab === 1 ? { color: "red" } : null}
               onClick={() => {
                 handleClose();
               }}>
@@ -211,14 +211,14 @@ const Details_Sidebar = (props) => {
                 primary="Work Experience"
                 sx={
                   props.tab === 1
-                    ? { color: "rgb(0, 128, 255)", paddingLeft: "8px" }
+                    ? { color: "red", paddingLeft: "8px" }
                     : null
                 }
               />
             </MenuItem>
             <Divider />
             <MenuItem
-              sx={props.tab === 2 ? { color: "rgb(0, 128, 255)" } : null}
+              sx={props.tab === 2 ? { color: "red" } : null}
               onClick={() => {
                 handleClose();
               }}>
@@ -230,14 +230,14 @@ const Details_Sidebar = (props) => {
                 primary="Education"
                 sx={
                   props.tab === 2
-                    ? { color: "rgb(0, 128, 255)", paddingLeft: "8px" }
+                    ? { color: "red", paddingLeft: "8px" }
                     : null
                 }
               />
             </MenuItem>
             <Divider />
             <MenuItem
-              sx={props.tab === 3 ? { color: "rgb(0, 128, 255)" } : null}
+              sx={props.tab === 3 ? { color: "red" } : null}
               onClick={() => {
                 handleClose();
               }}>
@@ -247,7 +247,7 @@ const Details_Sidebar = (props) => {
                 primary="Key Skills"
                 sx={
                   props.tab === 3
-                    ? { color: "rgb(0, 128, 255)", paddingLeft: "8px" }
+                    ? { color: "red", paddingLeft: "8px" }
                     : null
                 }
               />
