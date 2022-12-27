@@ -66,7 +66,7 @@ function Navbar(props) {
         <NavLink to="/aboutus" color="inherit" className="nav-link">
           About us
         </NavLink>
-        <FormControlLabel onClick={props.togglemode} control={<Switch />} label="Label" />
+        <FormControlLabel className="nav-link switch-margin" onClick={props.togglemode} control={<Switch />} label="Enable Dark mode" />
       </List>
     </Box>
   );
@@ -123,7 +123,7 @@ function Navbar(props) {
                   About Us
                 </NavLink>
                 
-                <FormControlLabel onClick={props.togglemode} control={<Switch color="secondary" />} label="Enable Dark mode" />
+                <FormControlLabel className="nav-link" onClick={props.togglemode} control={<Switch color="secondary" />} label="Enable Dark mode" />
           
               </Box>
             </Toolbar>

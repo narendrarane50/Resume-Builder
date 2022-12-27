@@ -388,6 +388,10 @@
   margin-top: 30px;
 }
 
+.switch-margin{
+  margin-top: 30px;
+}
+
 .active {
   color: rgb(0, 128, 255);
 }
