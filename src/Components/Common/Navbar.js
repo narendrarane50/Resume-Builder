@@ -16,6 +16,8 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 // import Button from '@mui/material/Button';
 import { ThemeProvider, createTheme } from "@mui/material/styles";
+import FormControlLabel from '@mui/material/FormControlLabel';
+import Switch from '@mui/material/Switch';
 
 const drawerWidth = 240;
 const logoTheme = createTheme({
@@ -64,6 +66,7 @@ function Navbar(props) {
         <NavLink to="/aboutus" color="inherit" className="nav-link">
           About us
         </NavLink>
+        <FormControlLabel onClick={props.togglemode} control={<Switch />} label="Label" />
       </List>
     </Box>
   );
@@ -92,6 +95,7 @@ function Navbar(props) {
                   fontSize: "25px",
                   position: "relative",
                   top: "5px",
+                  
                 }}>
                 <NavLink to="/" className="homeIcon">
                   {" "}
@@ -102,7 +106,7 @@ function Navbar(props) {
                   />
                 </NavLink>
               </Typography>
-              <Box sx={{ display: { xs: "none", sm: "block" } }}>
+              <Box sx={{ display: { xs: "none", sm: "block" } }} >
                 {/* sx={{ 
                                         color: '#080808', 
                                         fontSize: '13px', 
@@ -118,6 +122,9 @@ function Navbar(props) {
                 <NavLink to="/aboutus" className="nav-link aboutUs" color="inherit">
                   About Us
                 </NavLink>
+                
+                <FormControlLabel onClick={props.togglemode} control={<Switch color="secondary" />} label="Enable Dark mode" />
+          
               </Box>
             </Toolbar>
           </AppBar>

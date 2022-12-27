@@ -5,12 +5,10 @@ import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import EmailIcon from "@mui/icons-material/Email";
 import { Box } from "@mui/system";
-import Navbar from "../Components/Common/Navbar";
 
-export default function AboutUsPage() {
+export default function AboutUsPage(props) {
   return (
     <>
-      <Navbar />
       <Stack p={{ xs: "15px", sm: "25px", md: "40px", lg: "60px " }}>
         <h2 className="template-header-title">Resume Builder</h2>
         <Stack

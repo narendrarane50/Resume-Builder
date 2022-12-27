@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import Navbar from "../Components/Common/Navbar";
-import Details_Sidebar from "../Components/Details_Sidebar";
+import DetailsSidebar from "../Components/Details_Sidebar";
 import EducationDetails from "../Components/EducationDetails";
 import KeySkillsDetails from "../Components/KeySkillsDetails";
 import PersonalInfoDetails from "../Components/PersonalInfoDetails";
@@ -13,10 +12,9 @@ const DetailsFillingPage = (props) => {
 
   return (
     <div className="details-filling">
-      <Navbar active={""} />
       {tab === 4 ? null : (
         <div className="details-filling-cont">
-          <Details_Sidebar tab={tab} setTab={setTab} />
+          <DetailsSidebar tab={tab} setTab={setTab} />
           {tab === 0 ? (
             <PersonalInfoDetails setTab={setTab} tab={tab} />
           ) : null}

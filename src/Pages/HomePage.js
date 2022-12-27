@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "../Components/Common/Navbar";
 import "../Styles/index.css";
 import { DefaultTemplates } from "../Data/DefaultTemplates";
 import DarkScreen from "../Components/DarkScreen";
@@ -16,6 +15,8 @@ const mapDispatchToProps = (dispatch) => ({
   setSelectedTemplateId: (id) => dispatch(selectTemplate(id)),
 });
 
+
+
 const HomePage = (props) => {
   const navigate = useNavigate();
 
@@ -24,13 +25,31 @@ const HomePage = (props) => {
     navigate("/template/filldetails");
   };
 
+  // const [mode,setMode] = useState('light');
+  // const [btnText,setBtnText] = useState('text-dark');
+
+  // const togglemode = () =>{
+  //   if(mode==='light'){
+  //     setMode('dark')
+  //     setBtnText('text-light')
+  //     document.body.style.backgroundColor='#084298'
+  //     //showAlert("Dark mode has been enabled","success")
+  //     //document.title='TextUtils-DarkMode'
+  //   }
+  //   else{
+  //     setMode('light')
+  //     setBtnText('text-dark')
+  //     document.body.style.backgroundColor='#fff'
+  //     //showAlert("Light mode has been enabled","success")
+  //     //document.title='TextUtils-Home'
+  //   }
+  // }
+
   // console.log(props.selectedTemplateId);
   
   return (
     <>
-    <Navbar active={"Resume Templates"} />
       
-      <>
          <div className="home">
         <div className="home-templates-cont">
           <h2 className="template-header-title">Templates</h2>
@@ -70,7 +89,7 @@ const HomePage = (props) => {
           </Stack>
         </div>
       </div>
-      </>
+      
     </>
   );
 };

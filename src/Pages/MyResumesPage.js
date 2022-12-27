@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import Navbar from "../Components/Common/Navbar";
 import "../Styles/index.css";
 import { Button } from "@mui/material";
 import DarkScreen from "../Components/DarkScreen";
@@ -124,7 +123,6 @@ const MyResumesPage = (props) => {
   // console.log(resumes);
   return (
     <>
-      <Navbar active={"My Resumes"} />
       <div className="my-resumes">
         <Box sx={{ flexGrow: 1 }}>
           <Grid
