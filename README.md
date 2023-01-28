@@ -26,6 +26,11 @@ It is used to create Resumes using different types of Resume Templates and downl
 - Fullscreen mode
 - Cross platform
 
+## Deployment
+
+The app has been deployed on 
+https://resume-builder-new.netlify.app/
+
 
 ## Run Locally
 
